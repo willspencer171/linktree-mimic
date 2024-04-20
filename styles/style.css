@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(233, 255, 218)!important;
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+#floatIn {
+    width: 30vw;
+    height: 80vh;
+    background-color: aliceblue;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#floatIn.visible {
+    opacity: 1;
+    top: 50%;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.list-group-item {
+    border: none;
+}
+
+.hover-shadow {
+    text-align: center;
+    box-shadow: 0 5px 5px gainsboro;
+    transition: box-shadow 0.5s ease-out, transform 0.5s ease-out;
+    border-radius: 5px !important;
+}
+
+.hover-shadow:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 5px gainsboro;
+}
+
+.no-cursor:hover {
+    cursor: default;
+}
