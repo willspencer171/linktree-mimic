@@ -9,7 +9,7 @@ a {
 
 #floatIn {
     width: 30vw;
-    height: 80vh;
+    height: 60vh;
     background-color: aliceblue;
     opacity: 0;
     transition: all 1s ease-in-out;
