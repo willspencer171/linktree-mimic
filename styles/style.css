@@ -18,7 +18,7 @@ a {
 }
 
 #floatIn {
-    width: 70vw;
+    width: 60vw;
     height: 70vh;
     background-color: aliceblue;
     opacity: 0;
@@ -30,10 +30,10 @@ a {
     overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     #floatIn {
         height: 60vh;
-        width: 50vw;
+        width: 40vw;
     }
 }
 
