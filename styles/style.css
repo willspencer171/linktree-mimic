@@ -18,8 +18,8 @@ a {
 }
 
 #floatIn {
-    width: 30vw;
-    height: 60vh;
+    width: 70vw;
+    height: 70vh;
     background-color: aliceblue;
     opacity: 0;
     transition: all 1s ease-in-out;
@@ -30,6 +30,19 @@ a {
     overflow: hidden;
 }
 
+@media (min-width: 768px) {
+    #floatIn {
+        height: 60vh;
+        width: 50vw;
+    }
+}
+
+@media (max-width: 244px) {
+    #floatIn {
+        width: 90vw;
+    }
+}
+
 #floatIn.visible {
     opacity: 1;
     top: 50%;
@@ -37,7 +50,7 @@ a {
 
 .pfp-clip {
     aspect-ratio: 1;
-    width: 50px;
+    width: 80px;
     overflow: hidden;
     border-radius: 50%;
 }
