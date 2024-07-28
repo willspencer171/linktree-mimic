@@ -1,6 +1,6 @@
 body {
     background-color: rgb(208, 255, 200) !important;
-    overflow: hidden;
+    overflow: auto;
 }
 
 body > img {
@@ -24,9 +24,9 @@ a {
     opacity: 0;
     transition: all 1s ease-in-out;
     position: absolute;
-    top: 60%;
+    top: 10vh;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     overflow-y: auto;
 }
 
@@ -44,7 +44,7 @@ a {
 
 #floatIn.visible {
     opacity: 1;
-    top: 50%;
+    top: 15vh;
 }
 
 .pfp-clip {
