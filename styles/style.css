@@ -19,7 +19,7 @@ a {
 
 #floatIn {
     width: 60vw;
-    height: 70vh;
+    min-height: 70vh;
     background-color: aliceblue;
     opacity: 0;
     transition: all 1s ease-in-out;
@@ -27,12 +27,11 @@ a {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 @media (min-width: 992px) {
     #floatIn {
-        height: 60vh;
         width: 40vw;
     }
 }
