@@ -1,5 +1,8 @@
+* {
+    transition: box-shadow 0.5s ease-out, transform 0.5s ease-out;
+}
 body {
-    background-color: rgb(208, 255, 200) !important;
+    background-color: rgb(200, 255, 255) !important;
     overflow: auto;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
@@ -7,15 +10,6 @@ body {
 
 body::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
-}
-
-body > img {
-    position: fixed;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    opacity: 10%;
-    filter: grayscale(100%);
 }
 
 a {
@@ -28,17 +22,16 @@ a {
     height: fit-content;
     background-color: aliceblue;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: transform 1s ease-in-out;
     position: relative;
     margin-inline: auto;
-    margin-bottom: 20%;
-    top: 75px;
-    overflow-y: auto;
+    margin-bottom: 50px;
+    margin: 50px auto;
 }
 
 @media (min-width: 992px) {
     #floatIn {
-        width: 60vw;
+        width: 50vw;
     }
 }
 
@@ -50,20 +43,24 @@ a {
 
 #floatIn.visible {
     opacity: 1;
-    top: 100px;
+    transform: translateY(25px);
 }
 
 .pfp-clip {
     aspect-ratio: 1;
-    width: 80px;
+    width: 100px;
     overflow: hidden;
     border-radius: 50%;
+    box-shadow: 0 5px 5px gainsboro;
+    &:hover {transform: translateY(-5px);
+    box-shadow: 0 10px 5px gainsboro;}
 }
 
 #pfp {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transform: scale(3) translate(-5%, 5%);
 }
 
 .icon {
@@ -79,7 +76,6 @@ a {
 .hover-shadow {
     text-align: center;
     box-shadow: 0 5px 5px gainsboro;
-    transition: box-shadow 0.5s ease-out, transform 0.5s ease-out;
     border-radius: 5px !important;
 }
 
