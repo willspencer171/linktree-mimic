@@ -88,3 +88,15 @@ a {
 .no-cursor:hover {
     cursor: default;
 }
+
+#backBtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#backBtn:hover {
+    cursor: pointer;
+}
